@@ -20,6 +20,7 @@ return {
         cmp = true,
         gitsigns = true,
         nvimtree = true,
+        neotree = true,
         treesitter = true,
         mason = true,
         noice = true,
@@ -29,6 +30,17 @@ return {
           enabled = true,
         },
       },
+      custom_highlights = function(colors)
+        return {
+          -- Make neo-tree background transparent
+          NeoTreeNormal = { bg = "NONE" },
+          NeoTreeNormalNC = { bg = "NONE" },
+          NeoTreeEndOfBuffer = { bg = "NONE" },
+          -- Make other floating windows transparent
+          NormalFloat = { bg = "NONE" },
+          FloatBorder = { bg = "NONE" },
+        }
+      end,
     },
   },
 
