@@ -32,6 +32,9 @@ return {
       },
       custom_highlights = function(colors)
         return {
+          -- Make main background transparent
+          Normal = { bg = "NONE" },
+          NormalNC = { bg = "NONE" },
           -- Make neo-tree background transparent
           NeoTreeNormal = { bg = "NONE" },
           NeoTreeNormalNC = { bg = "NONE" },
@@ -39,6 +42,13 @@ return {
           -- Make other floating windows transparent
           NormalFloat = { bg = "NONE" },
           FloatBorder = { bg = "NONE" },
+          -- Make telescope transparent
+          TelescopeNormal = { bg = "NONE" },
+          TelescopeBorder = { bg = "NONE" },
+          -- Make statusline/tabline transparent
+          StatusLine = { bg = "NONE" },
+          TabLine = { bg = "NONE" },
+          TabLineFill = { bg = "NONE" },
         }
       end,
     },
